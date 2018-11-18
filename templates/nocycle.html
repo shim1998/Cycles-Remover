@@ -1,0 +1,20 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>GRAPH VISUALISER</h1>
+  </div>
+</div>
+<div class="container">
+  <h2>Non Cyclic Graph</h2>
+  <img src="{{url_for('static',filename='nocycle.png')}}"/>
+</div>
+<div class="container">
+  <center>
+    <a href="{{url_for('cycle')}}" type="button" class="btn btn-primary">Cyclic Graph</a>
+    <a href="{{url_for('index')}}" type="button" class="btn btn-danger">Re Enter Node Range</a>
+  </center>
+</div>
+
+{% endblock %}

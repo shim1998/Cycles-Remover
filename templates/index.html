@@ -1,0 +1,16 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>GRAPH VISUALISER</h1>
+  </div>
+</div>
+<div class="container">
+  <form method="POST" action="{{url_for('redirect')}}">
+    <input name="x" placeholder="From Node">
+    <input name="y" placeholder="To Node">
+    <input type="submit" name="Submit" class="btn btn-primary">
+  </form>
+</div>
+{% endblock %}
